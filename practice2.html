@@ -1,0 +1,40 @@
+<html>
+
+<head>
+    <h1>Practice 2</h1>
+</head>
+
+<style>
+	div {
+		border: 5px solid;
+		margin: auto;
+		width: 80%;
+	}	
+	p {
+		text-align: center;
+	}
+</style>
+<script>
+	function submitColor() {
+		let new_color = document.getElementById("color").value;
+		
+		document.getElementById("dummy").style.color = new_color;
+		console.log(new_color);
+	}
+</script>
+
+<body>
+	<div id="dummy">
+		<p id="dummy">this is some dummy text</p>
+	</div>
+
+	<br>
+
+	<label for="color">Enter color</label>
+	<input type="text" id="color" name="color">
+
+	<button onclick="submitColor()">Submit Color</button>  
+
+</body>
+
+</html>

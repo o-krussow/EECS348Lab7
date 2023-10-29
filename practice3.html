@@ -1,0 +1,44 @@
+<html>
+
+<head>
+    <h1>Practice 3</h1>
+</head>
+
+<script>
+	function verifyPassword() {
+		let password1 = document.getElementById("password1").value;
+		let password2 = document.getElementById("password2").value;
+	
+
+		if (password1 === password2) {
+			if (password1.length >= 8) {
+				alert("The passwords are matched");
+			}
+			else {
+				alert("The passwords are too short");
+			}
+		}
+		else {
+			alert("The passwords do not match");
+		}
+
+
+	}
+</script>
+
+<body>
+	<label for="password1">Enter password:</label>
+	<input type="text" id="password1" name="password1">
+
+	<br><br>
+
+	<label for="password2">Enter password again:</label>
+	<input type="text" id="password2" name="password2">
+
+	<br><br>
+
+	<button onclick="verifyPassword()">Verify</button>  
+
+</body>
+
+</html>
